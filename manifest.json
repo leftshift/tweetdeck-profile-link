@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+
+    "name": "tweetdeck-profile-link",
+    "description": "Makes the @-name you see when clicking on an account in Tweetdeck a link to the person's profile..",
+
+    "version": "1.0",
+
+    "content_scripts": [
+        {
+            "matches": ["https://tweetdeck.twitter.com/*", "http://tweetdeck.twitter.com/*"],
+            "js": ["profile-link.js"]
+        }
+    ]
+
+}
